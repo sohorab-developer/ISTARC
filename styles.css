@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("img/bg.png");
+}
+
+#intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    height: 100vh;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.fade-out {
+    animation: fadeOut 2s forwards;
+}
+#code {
+    height: 100vh;
+    
+    white-space: pre-wrap;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
